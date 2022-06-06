@@ -1,0 +1,5 @@
+{
+  "easy": ["cereal", "pizza", "sandwich"],
+  "medium": ["Tacos", "Spaghetti", "Lasagne"],
+  "hard": ["Chocolate Ice Cream", "Fish and Chips", "Apple Crumble"]
+}
