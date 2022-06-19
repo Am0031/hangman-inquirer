@@ -5,9 +5,17 @@ const displayWord = (word) => {
 };
 
 const displayHealth = (attempts = 10) => {
-  const healthArray = new Array(attempts).fill("❤️");
+  if (attempts > 0) {
+    const healthArray = new Array(attempts).fill("❤️");
 
-  console.log(`HEALTH: ${healthArray.join("")}`);
+    console.log(`HEALTH: ${healthArray.join("")}`);
+  } else {
+    console.log(`HEALTH: NONE`);
+  }
+};
+
+const displayGuessedLetters = (guessedLetters) => {
+  console.log(`GUESSED LETTERS: ${guessedLetters.join(" | ")}`);
 };
 
 const initGame = (word) => {
@@ -39,5 +47,6 @@ module.exports = {
   initGame,
   displayWord,
   displayHealth,
+  displayGuessedLetters,
   play,
 };
